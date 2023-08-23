@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Disclaimer Amigos del Karting</title>
+        <style type="text/css">
+            th{text-align: left; background-color: rgb(178, 171, 182);}
+            
+        </style>
+    </head>
+
+    <body>
+        <h2>Disclaimer 'Amigos del Karting'</h2>
+        <form action="disclaimeradk.php" method="post" name="fSuscripcion" id="fSuscripcion">
+            <table width="400" border="1" cellpadding="2" cellspacing="0">
+                <th colspan="2">DATOS DEL PILOTO</th>
+                <tr>
+                    <td><strong>Nombre y Apellidos:&nbsp;</strong></td>
+                    <td><input name="NYA" type="text" id="nombre"></td>
+                </tr>
+                <tr>
+                    <td><strong>DNI:&nbsp;</strong></td>
+                    <td><input name="DNI" type="text" id="dni" pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="9" placeholder="16123456X"></td>
+                </tr>
+                <tr>
+                    <td><strong>Edad:&nbsp;</strong></td>
+                     <td><input type="number" name="AGE" id="edad" min="5" max="99" value="30"></td>
+                </tr>
+                <tr>
+                    <td><strong>Direcci&oacute;n:&nbsp;</strong></td>
+                    <td><input name="DIR" type="text" id="direccion"></td>
+                </tr>
+                <tr>
+                    <td><strong>Poblaci&oacute;n:&nbsp;</strong></td>
+                    <td><input name="LOCA" type="text" id="poblacion"></td>
+                </tr>
+                <tr>
+                    <td><strong>C&oacute;digo Postal:&nbsp;</strong></td>
+                    <td><input name="CP" type="text" id="cp" pattern="[0-9]{5}" maxlength="5" placeholder="26001"></td>
+                </tr>
+                <tr>
+                    <td><strong>Tel&eacute;fono:&nbsp;</strong></td>
+                    <td><input type="tel" name="TFNO" id="tfno" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" placeholder="123456789"></td>
+                </tr>
+                <tr>
+                    <td><strong>Fecha:&nbsp;</strong></td>
+                    <td><input type="date" max="2039-12-31"></td>
+                </tr>
+                <th colspan="2">SEGURO</th>
+                <tr>
+                    <td><strong>Compa&ntilde;ia de seguros:&nbsp;</strong></td>
+                    <td><input name="CO" type="text" id="seguros">
+                    <datalist id="seguro">
+                        <option value="ANPA"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>N&uacute;mero de p&oacute;liza:&nbsp;</strong></td>
+                    <td><input name="POL" type="text" id="dni"></td>
+                </tr>
+                <th colspan="2">TUTOR (Menores de 18 a&ntilde;os)</th>
+                <tr>
+                    <td><strong>Nombre y Apellidos:&nbsp;</strong></td>
+                    <td><input name="NYAM" type="text" id="nombre"></td>
+                </tr>
+                <tr>
+                    <td><strong>DNI:&nbsp;</strong></td>
+                    <td><input name="DNIM" type="text" id="dnim" pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="9" placeholder="16123456X"></td>
+                </tr>
+                <tr align="center">
+                    <td height="85" colspan="2"><input type="submit" name="Submit" value="Enviar"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
